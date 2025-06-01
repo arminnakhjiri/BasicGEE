@@ -1,3 +1,9 @@
+var geometry = ee.Geometry.Polygon(
+  [[[51.06292958958561, 35.84607683539046],
+    [51.06292958958561, 35.559474077751595],
+    [51.68365712864811, 35.559474077751595],
+    [51.68365712864811, 35.84607683539046]]], null, false);
+
 // Load Landsat 9 image collection
 var landsat9 = ee.ImageCollection('LANDSAT/LC09/C02/T1_L2')
   .filterDate('2023-01-01', '2023-12-31')
