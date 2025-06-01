@@ -1,7 +1,13 @@
 // This script performs pansharpening on Landsat 9 Level 1 TOA imagery
 // for WRS Path 164, Row 35, with cloud cover < 10%, using the Brovey Transform
 
-var aoi = table;
+var geometry = ee.Geometry.Polygon(
+  [[[51.06292958958561, 35.84607683539046],
+    [51.06292958958561, 35.559474077751595],
+    [51.68365712864811, 35.559474077751595],
+    [51.68365712864811, 35.84607683539046]]], null, false);
+
+var aoi = geometry;
 
 // Load Landsat 9 Level 1 TOA collection (includes Band 8)
 var landsat9 = ee.ImageCollection('LANDSAT/LC09/C02/T1_TOA');
