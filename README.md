@@ -59,7 +59,7 @@ Executes unsupervised classification using K-means clustering:
 
 **Armin Nakhjiri**  
 Remote sensing scientist  
-📧 NakhjiriArmin@gmai.com
+📧 Nakhjiri.Armin@gmai.com
 
 ---
 
