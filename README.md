@@ -12,18 +12,18 @@ Visualizes NO₂ concentration trends over time using Sentinel-5P (TROPOMI) data
 - Computes mean NO₂ values
 - Plots a scatter chart to analyze temporal variation
 
-### 2. `PanSharpening_Intensity-Hue-Saturation.js`
+### 2. `panSharpeningIHS.js`
 Pansharpens Landsat 9 imagery using the IHS method:
 - Converts RGB to HSV color space
 - Replaces 'Value' with the panchromatic band
 - Converts back to RGB for a sharper visual
 
-### 3. `PanSharpening_Brovey.js`
+### 3. `panSharpeningBrovey.js`
 Uses the Brovey Transform to merge high-resolution panchromatic data with multispectral bands:
 - Enhances spatial details
 - Maintains spectral balance in RGB + NIR
 
-### 4. `LST_calculation.js`
+### 4. `calculatingL9LST.js`
 Calculates Land Surface Temperature (LST) from Landsat 9 Level 2 imagery:
 - Applies scaling factors to the ST_B10 band
 - Converts from Kelvin to Celsius
@@ -47,7 +47,7 @@ Executes unsupervised classification using K-means clustering:
 - Google Earth Engine account
 - Familiarity with JavaScript and basic remote sensing principles
 - Predefined geometry (`geometry` or `table`) for AOI
-- (Optional) Pre-labeled training FeatureCollections (`W`, `G`, `I`) for supervised classification
+- Pre-labeled training FeatureCollections (`W`, `G`, `I`) for supervised classification
 
 ## 📌 Notes
 
