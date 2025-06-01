@@ -19,6 +19,10 @@ var lstKelvin = image.select('ST_B10')
   .add(149.0)
   .rename('LST_K');
 
+
+// LSTK = ST_B10 × 0.00341802 + 149.0
+// The scale factor 0.00341802 and additive offset 149.0 are defined by USGS for converting ST_B10 digital numbers to temperature in Kelvin.
+
 // Convert to Celsius
 var lstCelsius = lstKelvin.subtract(273.15).rename('LST_C');
 
