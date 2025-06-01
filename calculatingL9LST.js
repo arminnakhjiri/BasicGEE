@@ -1,4 +1,10 @@
-var aoi = table;
+var geometry = ee.Geometry.Polygon(
+  [[[51.06292958958561, 35.84607683539046],
+    [51.06292958958561, 35.559474077751595],
+    [51.68365712864811, 35.559474077751595],
+    [51.68365712864811, 35.84607683539046]]], null, false);
+
+var aoi = geometry;
 
 var landsat9 = ee.ImageCollection('LANDSAT/LC09/C02/T1_L2');
 
