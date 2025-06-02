@@ -6,37 +6,42 @@ Each script is self-contained and demonstrates a specific concept using publicly
 
 ## 🔍 Contents
 
-### 1. `pollutionTimeSeries.js`
+### 1. `lesson_1.js` and `lesson_2.js` (folder: `Class_05022025`)
+Basic visualizations using Sentinel-5P NO₂ (TROPOMI) data:
+- `lesson_1`: Adds a single image layer to the map
+- `lesson_2`: Reduces a one-month collection (January 2021) and clips it to Tehran
+
+### 2. `pollutionTimeSeries.js`
 Visualizes NO₂ concentration trends over time using Sentinel-5P (TROPOMI) data:
 - Clips to a defined Area of Interest (AOI)
 - Computes mean NO₂ values
 - Plots a scatter chart to analyze temporal variation
 
-### 2. `panSharpeningIHS.js`
+### 3. `panSharpeningIHS.js`
 Pansharpens Landsat 9 imagery using the IHS method:
 - Converts RGB to HSV color space
 - Replaces 'Value' with the panchromatic band
 - Converts back to RGB for a sharper visual
 
-### 3. `panSharpeningBrovey.js`
+### 4. `panSharpeningBrovey.js`
 Uses the Brovey Transform to merge high-resolution panchromatic data with multispectral bands:
 - Enhances spatial details
 - Maintains spectral balance in RGB + NIR
 
-### 4. `calculatingL9LST.js`
+### 5. `calculatingL9LST.js`
 Calculates Land Surface Temperature (LST) from Landsat 9 Level 2 imagery:
 - Applies scaling factors to the ST_B10 band
 - Converts from Kelvin to Celsius
 - Visualizes LST with a color ramp
 
-### 5. `supervisedClassification.js`
+### 6. `supervisedClassification.js`
 Performs supervised land cover classification using a Random Forest model:
 - Computes NDVI and NDBI
 - Trains a classifier on labeled features (e.g., water, vegetation, impervious surfaces)
 - Outputs a classified map and accuracy assessment
 - Includes optional export to Google Drive
 
-### 6. `unsupervisedClassification.js`
+### 7. `unsupervisedClassification.js`
 Executes unsupervised classification using K-means clustering:
 - Generates a median composite
 - Clusters pixels into land cover classes without training data
